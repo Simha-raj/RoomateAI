@@ -40,12 +40,6 @@
             <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
-        <!-- In-memory database for standalone run; swap for postgres/mysql driver later -->
-        <dependency>
-            <groupId>com.h2database</groupId>
-            <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-        </dependency>
 
         <!-- Reduces boilerplate (getters/setters/constructors) -->
         <dependency>
