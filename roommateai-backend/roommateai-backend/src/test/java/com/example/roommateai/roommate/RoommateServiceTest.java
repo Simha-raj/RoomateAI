@@ -1,8 +1,11 @@
 package com.example.roommateai.roommate;
 
 import com.example.roommateai.roommate.dto.RoommateRequest;
+import com.example.roommateai.roommate.entity.Roommate;
 import com.example.roommateai.roommate.exception.DuplicateRoommateException;
 import com.example.roommateai.roommate.exception.RoommateNotFoundException;
+import com.example.roommateai.roommate.repository.RoommateRepository;
+import com.example.roommateai.roommate.service.RoommateService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -73,8 +76,8 @@ class RoommateServiceTest {
 
     @Test
     void getAllRoommates_returnsListSortedByName() {
-        Roommate zoe = new Roommate("Zoe", "zoe@example.com", null, null, null, null);
-        Roommate amy = new Roommate("Amy", "amy@example.com", null, null, null, null);
+        Roommate zoe = new Roommate("Zoe", "zoe@example.com", null, null, null);
+        Roommate amy = new Roommate("Amy", "amy@example.com", null, null, null);
 
         when(roommateRepository.findAll()).thenReturn(List.of(zoe, amy));
 
