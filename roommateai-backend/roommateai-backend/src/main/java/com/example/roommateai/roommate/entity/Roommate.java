@@ -1,10 +1,11 @@
-package com.example.roommateai.roommate;
+package com.example.roommateai.roommate.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.LocalDate;
+import java.util.UUID;
 
 @Setter
 @Getter
@@ -14,7 +15,7 @@ public class Roommate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private UUID id;
 
     @Column(nullable = false)
     private String name;
@@ -35,13 +36,12 @@ public class Roommate {
     }
 
     public Roommate(String name, String email, String phone, String roomNumber,
-                     LocalDate moveInDate, String notes) {
+                     LocalDate moveInDate) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.roomNumber = roomNumber;
         this.moveInDate = moveInDate;
-        this.notes = notes;
     }
 
 }
