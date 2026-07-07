@@ -1,0 +1,188 @@
+/* Overlay */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal */
+
+.invite-modal {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+    animation: popup 0.25s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Header */
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: #1F2937;
+}
+
+.modal-header p {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #6B7280;
+}
+
+.close-btn {
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 10px;
+    background: #F3F4F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.close-btn:hover {
+    background: #E5E7EB;
+}
+
+/* Form */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Input */
+
+.input-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 48px;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 0 14px;
+    transition: .2s;
+    background: white;
+}
+
+.input-box:focus-within {
+    border-color: #6C4CF1;
+    box-shadow: 0 0 0 3px rgba(108, 76, 241, 0.12);
+}
+
+.input-box svg {
+    color: #6B7280;
+    flex-shrink: 0;
+}
+
+.input-box input,
+.input-box select {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #374151;
+}
+
+.input-box input::placeholder {
+    color: #9CA3AF;
+}
+
+/* Footer */
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+/* Buttons */
+
+.cancel-btn {
+    min-width: 120px;
+    height: 44px;
+    border: 1px solid #D1D5DB;
+    background: #FFFFFF;
+    color: #374151;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cancel-btn:hover {
+    background: #F9FAFB;
+}
+
+.invite-btn {
+    min-width: 150px;
+    height: 44px;
+    border: none;
+    background: #6C4CF1;
+    color: white;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.invite-btn:hover {
+    background: #5B3FE2;
+}
+
+/* Scrollbar */
+
+.invite-modal::-webkit-scrollbar {
+    width: 6px;
+}
+
+.invite-modal::-webkit-scrollbar-thumb {
+    background: #D1D5DB;
+    border-radius: 10px;
+}
+
+.invite-modal::-webkit-scrollbar-track {
+    background: transparent;
+}

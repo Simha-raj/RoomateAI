@@ -1,0 +1,58 @@
+const members = [
+  {
+    id: 1,
+    name: "Raju Kumar",
+    avatar: "https://i.pravatar.cc/150?img=12",
+    joined: "12 May 2024",
+    age: 26,
+    shift: "Morning",
+    company: "Infosys",
+  },
+  {
+    id: 2,
+    name: "Priya Sharma",
+    avatar: "https://i.pravatar.cc/150?img=5",
+    joined: "18 May 2024",
+    age: 24,
+    shift: "Evening",
+    company: "TCS",
+  },
+  {
+    id: 3,
+    name: "Aman Verma",
+    avatar: "https://i.pravatar.cc/150?img=15",
+    joined: "20 May 2024",
+    age: 25,
+    shift: "Night",
+    company: "Wipro",
+  },
+  {
+    id: 4,
+    name: "Neha Singh",
+    avatar: "https://i.pravatar.cc/150?img=32",
+    joined: "22 May 2024",
+    age: 23,
+    shift: "Morning",
+    company: "Cognizant",
+  },
+  {
+    id: 5,
+    name: "Vikram Rao",
+    avatar: "https://i.pravatar.cc/150?img=60",
+    joined: "25 May 2024",
+    age: 27,
+    shift: "Evening",
+    company: "Accenture",
+  },
+  {
+    id: 6,
+    name: "Ishita Mehta",
+    avatar: "https://i.pravatar.cc/150?img=45",
+    joined: "28 May 2024",
+    age: 24,
+    shift: "Night",
+    company: "Deloitte",
+  },
+];
+
+export default members;

@@ -1,0 +1,200 @@
+.sidebar {
+    width: 220px;
+    background: white;
+    height: 100vh;
+    border-right: 1px solid #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px 18px;
+    position: sticky;
+    top: 0;
+    transition: .3s;
+   
+    
+}
+
+@media(max-width:768px) {
+
+    .sidebar {
+
+        position: fixed;
+
+        left: -240px;
+
+        top: 0;
+
+        width: 220px;
+
+        height: 100vh;
+
+        z-index: 1001;
+
+        transition: left .3s ease;
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+
+    }
+
+    .sidebar.open {
+
+        left: 0;
+
+    }
+
+}
+
+.sidebar-overlay {
+
+    display: none;
+
+}
+
+@media(max-width:768px) {
+
+    .sidebar-overlay {
+
+        display: block;
+
+        position: fixed;
+
+        top: 0;
+
+        left: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        background: rgba(0, 0, 0, .45);
+
+        z-index: 1000;
+
+    }
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    background: #5b3df5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+
+.logo h2 {
+    font-size: 20px;
+}
+
+.logo small {
+    color: gray;
+}
+
+.menu {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    color: #555;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.menu-item:hover {
+    background: #f2efff;
+}
+
+.menu-item.active {
+    background: #5b3df5;
+    color: white;
+}
+
+.menu-icon {
+    font-size: 18px;
+}
+
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.room-card {
+    background: #f5f7fb;
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.invite-btn {
+    background: #5b3df5;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.invite-btn:hover {
+    background: #4426d7;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-card img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.profile-card h4 {
+    font-size: 15px;
+}
+
+.profile-card small {
+    color: gray;
+}
+
+.content-area{
+
+flex:1;
+
+width:100%;
+
+}
+
+@media(min-width:769px){
+
+.content-area{
+
+margin-left:0;
+
+}
+
+}
