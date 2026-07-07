@@ -15,7 +15,7 @@ public class Roommate {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private UUID id;
+    private Long id;
 
     @Column(nullable = false)
     private String name;
@@ -28,9 +28,6 @@ public class Roommate {
     private String roomNumber;
 
     private LocalDate moveInDate;
-
-    @Column(length = 500)
-    private String notes;
 
     public Roommate() {
     }
