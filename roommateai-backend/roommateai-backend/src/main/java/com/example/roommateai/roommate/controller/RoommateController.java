@@ -1,6 +1,8 @@
-package com.example.roommateai.roommate;
+package com.example.roommateai.roommate.controller;
 
 import com.example.roommateai.roommate.dto.RoommateRequest;
+import com.example.roommateai.roommate.entity.Roommate;
+import com.example.roommateai.roommate.service.RoommateService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

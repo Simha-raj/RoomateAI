@@ -1,5 +1,6 @@
-package com.example.roommateai.roommate;
+package com.example.roommateai.roommate.repository;
 
+import com.example.roommateai.roommate.entity.Roommate;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

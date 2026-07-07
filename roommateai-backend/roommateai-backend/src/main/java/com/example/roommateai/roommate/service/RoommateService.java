@@ -1,8 +1,10 @@
-package com.example.roommateai.roommate;
+package com.example.roommateai.roommate.service;
 
 import com.example.roommateai.roommate.dto.RoommateRequest;
+import com.example.roommateai.roommate.entity.Roommate;
 import com.example.roommateai.roommate.exception.DuplicateRoommateException;
 import com.example.roommateai.roommate.exception.RoommateNotFoundException;
+import com.example.roommateai.roommate.repository.RoommateRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.Comparator;
@@ -30,8 +32,7 @@ public class RoommateService {
                 request.getEmail(),
                 request.getPhone(),
                 request.getRoomNumber(),
-                request.getMoveInDate(),
-                request.getNotes()
+                request.getMoveInDate()
         );
 
         return roommateRepository.save(roommate);
