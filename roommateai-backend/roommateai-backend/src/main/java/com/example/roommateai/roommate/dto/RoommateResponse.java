@@ -10,4 +10,5 @@ public class RoommateResponse {
     private String email;
     private String phone;
     private LocalDate moveInDate;
+    private String company;
 }

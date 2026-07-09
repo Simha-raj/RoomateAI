@@ -29,16 +29,20 @@ public class Roommate {
 
     private LocalDate moveInDate;
 
+    @Column(length = 100)
+    private String Company;
+
     public Roommate() {
     }
 
     public Roommate(String name, String email, String phone, String roomNumber,
-                     LocalDate moveInDate) {
+                     LocalDate moveInDate, String company) {
         this.name = name;
         this.email = email;
         this.phone = phone;
         this.roomNumber = roomNumber;
         this.moveInDate = moveInDate;
+        this.Company = company;
     }
 
 }

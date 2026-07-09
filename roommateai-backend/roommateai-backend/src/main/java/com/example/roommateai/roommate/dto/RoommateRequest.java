@@ -19,6 +19,7 @@ public class RoommateRequest {
     private String phone;
     private String roomNumber;
     private LocalDate moveInDate;
+    private String Company;
     public RoommateRequest() {
     }
 
