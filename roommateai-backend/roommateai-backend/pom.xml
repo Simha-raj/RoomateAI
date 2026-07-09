@@ -41,6 +41,11 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+        </dependency>
+
         <!-- Reduces boilerplate (getters/setters/constructors) -->
         <dependency>
             <groupId>org.projectlombok</groupId>
